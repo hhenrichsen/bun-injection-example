@@ -6,7 +6,7 @@ const app = new Hono();
 
 const todoModel = new MemoryTodoModel();
 const controller = new TodoController(todoModel);
-
+app.rout("/hello-world", controller.router);
 app.route("/todo", controller.router);
 
 export default {
