@@ -1,0 +1,30 @@
+{
+  "name": "bun-injection-example",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "better-sqlite3": "^11.8.1",
+    "drizzle-kit": "^0.30.5",
+    "prettier": "^3.5.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.4.3",
+    "dotenv": "^16.4.7",
+    "drizzle": "^1.4.0",
+    "drizzle-orm": "^0.40.0",
+    "hono": "^4.7.2",
+    "reflect-metadata": "^0.2.2",
+    "tsyringe": "^4.8.0",
+    "zod": "^3.24.2"
+  }
+}
